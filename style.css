@@ -4,3 +4,42 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif; 
 } 
+
+body {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 2fr 6fr 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "nav"
+      "main"
+      "footer"; 
+    align-items: stretch; 
+  }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+} 
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: black;
+  }
+
+  .top-section {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+  }
+
+  footer {
+      background-color: black;
+      color: white;
+  }
